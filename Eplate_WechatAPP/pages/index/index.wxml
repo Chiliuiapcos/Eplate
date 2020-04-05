@@ -1,0 +1,56 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view> -->
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+    <!--   {{a+b}}+{{c}}=6 -->
+    <!-- <view wx:if="{{num==1}}"> num和1相等</view> -->
+
+    <!-- <view wx:for="{{[1,2,3,4,5,6,7,8,9]}}" wx:for-item="i">
+      <view wx:for="{{[1,2,3,4,5,6,7,8,9]}}" ex:for-item="j">
+        <view wx:if="{{i<=j}}">
+          {{i}}*{{j}}={{i*j}}
+        </view>
+      </view>
+    </view> -->
+    <text class="myText">\nDemo</text>
+    <progress percent="20" show-info ></progress>
+    <button loading="true">Loading</button>
+    <!-- <checkbox-group bindchange="checkboxChange">
+      <label class="checkbox" wx:for="{{items}}">
+        <checkbox value="{{item.name}}"/>{{item.value}}
+      </label>
+    </checkbox-group> -->
+    
+    <!-- <form bindreset="formSubmit" bindreset="formRest">
+      <input name="input" placeholder="input"/>
+      <button type="primary" form-type="submit">提交</button>
+      <button formType="reset">reset</button>
+    </form> -->
+
+    <!-- <view class='inputview'>
+      <view class='myBackGround'>
+        <input placeholder="default notice"/>
+      </view>
+      <view class='myBackGround2'>
+        <input maxlength="1" placeholder="max length=1"/>
+      </view>
+      <view class='myBackGround'>
+        <view class="section_title">input:{{inputValue}}</view>
+        <input bindinput="bindKeyInput" placeholder="sys view"/>
+      </view>
+      <view class='myBackGround2'>
+        <input password type="number"/>
+      </view>
+      <view class='myBackGround'>
+        <input placeholder-style="color:red" placeholder="red"/>
+      </view>
+    </view> -->
+  </view>
+</view>
